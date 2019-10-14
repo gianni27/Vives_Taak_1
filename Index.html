@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Vives Taak1 Responsive Bootstrap Sidebar Menu</title>
+    <!--    font awesome css-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--    font awesome 5 css-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
+    <!--    bootstrap  css-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--    custom css-->
+    <link href="css/style.css" rel="stylesheet">
+    <!--    navigatie css-->
+    <link href="css/Navigatie.css" rel="stylesheet">
+    <!--    Kalender css-->
+    <link rel="stylesheet" href="css/Calender.css">
+
+
+</head>
+<body>
+<!--    Header  -->
+<div class="container-fluid-width my-container px-0">
+    <div class="row header fixed-top no-gutters">
+        <div class="col-md-12 my-col ">
+        </div>
+    </div>
+</div>
+<!--    Nav Bar  -->
+<div class="container-fluid-width my-container2 px-0">
+    <div class="row center no-gutters">
+        <div class="col-md-2 col col-xl-2 float-left col-1 pl-0 pr-0 collapse width show position-fixed  " id="sidebar">
+            <div class="list-group border-0 card">
+                <a class="home list-group-item d-inline-block collapsed" data-parent="#sidebar" href="#home">
+                    <i class="fas fa-home"></i><span class="d-none d-md-inline">Home</span></a>
+                <a class="about list-group-item d-inline-block collapsed" data-parent="#sidebar" href="#about">
+                    <i class="fas fa-address-card"></i> <span class="d-none d-md-inline">Over Mij</span></a>
+                <a class="taak list-group-item d-inline-block collapsed" data-parent="#sidebar" href="#task">
+                    <i class="fab fa-stack-overflow"></i> <span class="d-none d-md-inline">Taak</span></a>
+                <a class="list-group-item d-inline-block collapsed" data-parent="#sidebar" href="#other"><i
+                        class="fa fa-th"></i><span class="d-none d-md-inline">Ander Component</span></a>
+                <a class="list-group-item d-inline-block collapsed" data-parent="#sidebar" href="#cards"><i
+                        class="fas fa-id-card-alt"></i> <span class="d-none d-md-inline">Cards</span></a>
+                <a class="list-group-item d-inline-block collapsed" data-parent="#sidebar" href="#calendar_first"><i
+                        class="fa fa-calendar"></i> <span class="d-none d-md-inline">Kalender</span></a>
+                <a class="list-group-item d-inline-block collapsed" data-parent="#sidebar" href="#sources"><i
+                        class="fa fa-star"></i> <span class="d-none d-md-inline">Sources</span></a>
+
+
+                <a aria-expanded="false" class="list-group-item d-inline-block collapsed" data-parent="#sidebar"
+                   data-toggle="collapse" href="#menu1"><i class="fa fa-dashboard"></i> <span
+                        class="d-none d-md-inline">klap menu</span> </a>
+                <div class="collapse" id="menu1">
+                    <a aria-expanded="false" class="list-group-item" data-toggle="collapse" href="#menu1sub1">Subitem
+                        1 </a>
+                    <div class="collapse" id="menu1sub1">
+                        <a class="list-group-item" data-parent="#menu1sub1" href="#">Subitem 1 a</a>
+                        <a class="list-group-item" data-parent="#menu1sub1" href="#">Subitem 2 b</a>
+            </div>
+        </div>
+                <p></p>
+                <!-- START OF THE RADIO HTML5 PLAYER EMBEDDING -->
+                <audio controls="true" preload="none">
+                <source src="http://icecast.vrtcdn.be/mnm-high.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <!-- END OF THE RADIO HTML5 PLAYER EMBEDDING -->
+    </div>
+</div>
+
+<!--    HoofdPagina    -->
+<!--  plaatse iedere col in een container om de positie te kunnen bepalen tegenover de andere containers -->
+<div class="container-fluid-width my-container3 px-0">
+    <div class="col-md-10 float-right" id="main">
+        <!-- Klap menu in of open-->
+        <a aria-expanded="false" data-target="#sidebar" data-toggle="collapse" href="#">Toggle Menu</a>
+        <!-- Home  -->
+        <div id="home">
+            <h2>Taak 1 Gianni Acke Vives </h2>
+
+            <p>Deze website is gemaakt op basis van een gegeven opdracht.</p>
+            <p>Onder de link taak kunt u de gevraagde implementaties terugvinden.</p>
+            <p>De navbar kan inklappen met de toggle menu knop.</p>
+            <p>De navbar en de volledige website is responsive.</p>
+            <p>Het bootstrap framework is een volledig nieuw gegeven dus kwam er wel wat zoekwerk bij.</p>
+            <p>Onder sources kun je alle website's terugvinden met al de informatie hoe deze site werd
+                opgebouwd.</p>
+
+            <p>Woensdag 9/10 Layout uit tekenen</p>
+            <p>Donderdag 10/10 Pseudo code schrijven </p>
+            <p>Vrijdag 11/10 Code volledig uitwerken</p>
+            <p>Zaterdag 12/10 Zoeken waarom een anchor met een fixed div out of sync is</p>
+            <p>Zondag 13/10 Verder zoeken waarom een inline anchor </p>
+            <p>Maandag 14/10 code opkuisen en optimaliseren</p>
+            <p>@ 23u deadline uploaden project</p>
+        </div>
+        <!-- About me  -->
+        <div class="row">
+            <div class="col-md-12">
+                <H1>Over mij</H1>
+                <div aria-expanded="false" class="width collapse show" id="about">
+                    <div class="list-group" style="width: 400px;">
+                        <p></p>
+                        <img height="290" src="img/about.png" width="300"/>
+                        <p></p>
+                        <p>Adres : 81.25.65.189</p>
+                        <p>Lokaal adres : 127.0.0.1</p>
+                        <p>Fysisch adres : 29:65:42:16:3B:1C</p></div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <H1>Taak</H1>
+                <div id="task">
+                    <p>Maak een HTML/CSS website waarin het volgende aanwezig is:</p>
+                    <p></p>
+                    <p>&bull; Het gebruik van Bootstrap Nav/Navbar.</p>
+                    <p>&bull; Het gebruik van Bootstrap Grid design.</p>
+                    <p>&bull; Het gebruik van Bootstrap Cards.</p>
+                    <p>&bull; Het navigeren naar een tweede pagina binnen jouw website (zorg dat alle links
+                        werken).</p>
+                    <p>&bull; Het navigeren naar een externe pagina die opent in een nieuw tabblad.</p>
+                    <p>&bull; Het gebruik van een afbeelding.</p>
+                    <p>&bull; Het gebruik van één andere Bootstrap component.</p>
+                </div>
+            </div>
+        </div>
+        <!-- other component -->
+        <div class="row">
+            <div class="col-sm-12">
+                <H1>Ander Component</H1>
+                <p></p>
+                <div id="other">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button aria-expanded="true" class="btn btn-danger" data-target="#demo"
+                                    data-toggle="collapse"
+                                    role="button">
+                                horizontaal inklappen
+                            </button>
+                            <p></p>
+                            <div aria-expanded="true" class="width collapse show" id="demo">
+                                <div class="list-group" style="width: 400px;">
+                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi
+                                        porta
+                                        gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id
+                                        elit.</p>
+                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi
+                                        porta
+                                        gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id
+                                        elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <button aria-expanded="true" class="btn btn-danger" data-target="#demo2"
+                                    data-toggle="collapse"
+                                    role="button">
+                                verticaal inklappen
+                            </button>
+                            <p></p>
+                            <div aria-expanded="true" class="height collapse show" id="demo2">
+                                <div class="list-group" style="width: 400px;">
+                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi
+                                        porta
+                                        gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id
+                                        elit.</p>
+                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi
+                                        porta
+                                        gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id
+                                        elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- cards --------->
+        <div class="row">
+            <div class="col-sm-12">
+                <H1>Bootstrap Cards</H1>
+                <p></p>
+                <div id="cards">
+
+                    <div class="row">
+
+                        <div class="col-sm-0.5"></div>
+                        <div class="col-sm-3">
+                            <div class="card">
+
+                                <!-- Card image -->
+                                <div class="view view-cascade overlay">
+                                    <img alt="Card image cap" class="card-img-top" height="300" src="img/comic2.jpg"
+                                         width="400">
+                                    <a href="#!">
+                                        <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+
+                                <!-- Card content -->
+                                <div class="card-body card-body-cascade text-center">
+
+                                    <!-- Title -->
+                                    <h4 class="card-title"><strong>The Joker</strong></h4>
+                                    <!-- Subtitle -->
+                                    <h5 class="blue-text pb-2"><strong>Artist</strong></h5>
+                                    <!-- Text -->
+                                    <p class="card-text">Sed ut perspiciatis unde omnis iste natus sit voluptatem
+                                        accusantium
+                                        doloremque laudantium, totam rem aperiam. </p>
+
+                                    <!-- Linkedin -->
+                                    <a class="px-2 fa-lg li-ic"><i class="fab fa-linkedin-in"></i></a>
+                                    <!-- Twitter -->
+                                    <a class="px-2 fa-lg tw-ic"><i class="fab fa-twitter"></i></a>
+                                    <!-- Dribbble -->
+                                    <a class="px-2 fa-lg fb-ic"><i class="fab fa-facebook-f"></i></a>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-sm-1"></div>
+
+                        <div class="col-sm-3">
+                            <div class="card">
+
+                                <!-- Card image -->
+                                <div class="view view-cascade overlay">
+                                    <img alt="Card image cap" class="card-img-top" height="300" src="img/comic1.jpg"
+                                         width="400">
+                                    <a href="#!">
+                                        <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+
+                                <!-- Card content -->
+                                <div class="card-body card-body-cascade text-center">
+
+                                    <!-- Title -->
+                                    <h4 class="card-title"><strong>Batman</strong></h4>
+                                    <!-- Subtitle -->
+                                    <h5 class="blue-text pb-2"><strong>Bad Artist</strong></h5>
+                                    <!-- Text -->
+                                    <p class="card-text">Sed ut perspiciatis unde omnis iste natus sit voluptatem
+                                        accusantium
+                                        doloremque laudantium, totam rem aperiam. </p>
+
+                                    <!-- Linkedin -->
+                                    <a class="px-2 fa-lg li-ic"><i class="fab fa-linkedin-in"></i></a>
+                                    <!-- Twitter -->
+                                    <a class="px-2 fa-lg tw-ic"><i class="fab fa-twitter"></i></a>
+                                    <!-- Dribbble -->
+                                    <a class="px-2 fa-lg fb-ic"><i class="fab fa-facebook-f"></i></a>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-3">
+                            <div class="card">
+
+                                <!-- Card image -->
+                                <div class="view view-cascade overlay">
+                                    <img alt="Card image cap" class="card-img-top" height="300" src="img/comic3.jpg"
+                                         width="400">
+                                    <a href="#!">
+                                        <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+
+                                <!-- Card content -->
+                                <div class="card-body card-body-cascade text-center">
+
+                                    <!-- Title -->
+                                    <h4 class="card-title"><strong>Bad Girl</strong></h4>
+                                    <!-- Subtitle -->
+                                    <h5 class="blue-text pb-2"><strong>Pyromaan</strong></h5>
+                                    <!-- Text -->
+                                    <p class="card-text">Sed ut perspiciatis unde omnis iste natus sit voluptatem
+                                        accusantium
+                                        doloremque laudantium, totam rem aperiam. </p>
+
+                                    <!-- Linkedin -->
+                                    <a class="px-2 fa-lg li-ic"><i class="fab fa-linkedin-in"></i></a>
+                                    <!-- Twitter -->
+                                    <a class="px-2 fa-lg tw-ic"><i class="fab fa-twitter"></i></a>
+                                    <!-- Dribbble -->
+                                    <a class="px-2 fa-lg fb-ic"><i class="fab fa-facebook-f"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Kalender --------->
+        <div class="row">
+                    <div class="col-md-12">
+                        <H1>Kalender</H1>
+                        <div class="calendar calendar-first" id="calendar_first">
+                            <div class="calendar_header">
+                                <button class="switch-month switch-left">
+                                    <i class="glyphicon glyphicon-chevron-left"></i>
+                                </button>
+                                <h2></h2>
+                                <button class="switch-month switch-right">
+                                    <i class="glyphicon glyphicon-chevron-right"></i>
+                                </button>
+                            </div>
+                            <div class="calendar_weekdays"></div>
+                            <div class="calendar_content"></div>
+                        </div>
+                    </div>
+                </div>
+        <!-- Sources -->
+        <div class="row">
+
+            <div class="col-md-12">
+                <H1>Gebruikte Sources</H1>
+                <div aria-expanded="true" class="width collapse show" id="sources">
+                    <div class="list-group" style="width: 400px;">
+                        <i class="fa fa-anchor">&nbsp &nbsp<a href="https://fontawesome.com/" target="_blank">Font
+                            Awesome</a></i>
+                        <i class="fa fa-anchor">&nbsp &nbsp<a
+                                href="https://en.m.wikipedia.org/wiki/CSS_box_model?fbclid=IwAR2ZYvtbfLynUjt-hjo7D3bcOeO5afqn3K_Rca8puF2zTBMvDwRRc8amJAM/"
+                                target="_blank">Wiki Css Box Model</a></i>
+                        <i class="fa fa-anchor">&nbsp &nbsp<a
+                                href="https://startbootstrap.com/templates/simple-sidebar/" target="_blank">Bootstrap
+                            Simple SideBar</a></i>
+                        <i class="fa fa-anchor">&nbsp &nbsp<a href="https://getbootstrap.com/" target="_blank">Bootstrap
+                            css/js/popper/jquery</a></i>
+                        <i class="fa fa-anchor">&nbsp &nbsp<a
+                                href="https://www.w3schools.com/howto/howto_css_sidebar_responsive.asp"
+                                target="_blank">W3School responsive sidebar</a></i>
+                        <i class="fa fa-anchor">&nbsp &nbsp<a href="https://code.jquery.com/"
+                                                              target="_blank">jquery</a></i>
+                        <i class="fa fa-anchor">&nbsp &nbsp<a
+                                href="https://mdbootstrap.com/docs/jquery/layout/grid-examples/" target="_blank">BootStrap
+                            Grid</a></i>
+                        <i class="fa fa-anchor">&nbsp &nbsp<a href="https://www.w3schools.com/css/css3_images.asp"
+                                                              target="_blank">W3School css image styling</a></i>
+                        <i class="fa fa-anchor">&nbsp &nbsp<a href="https://www.w3schools.com/css/css_navbar.asp"
+                                                              target="_blank">W3School Navbar</a></i>
+                        <i class="fa fa-anchor">&nbsp &nbsp<a
+                                href="https://www.w3schools.com/cssref/pr_background-repeat.asp" target="_blank">W3School
+                            css background</a></i>
+                        <i class="fa fa-anchor">&nbsp &nbsp<a
+                                href="https://stackoverflow.com/questions/33404154/bootstrap-change-the-navbar-font-size"
+                                target="_blank">Stack bootstrap navbar text size css</a></i>
+                        <i class="fa fa-anchor">&nbsp &nbsp<a
+                                href="https://stackoverflow.com/questions/11386586/how-to-show-div-tag-literally-in-code-pre-tag"
+                                target="_blank">Stack use Css code as code in html</a></i>
+                        <i class="fa fa-anchor">&nbsp &nbsp<a
+                                href="https://getbootstrap.com/docs/4.3/components/collapse/#example"
+                                target="_blank">Bootstrap horizontal/vertical collapse</a></i>
+                        <i class="fa fa-anchor">&nbsp &nbsp<a
+                                href="https://stackoverflow.com/questions/19562903/remove-padding-from-columns-in-bootstrap-3"
+                                target="_blank">Stack remove padding from col</a></i>
+                        <i class="fa fa-anchor">&nbsp &nbsp<a
+                                href="https://stackoverflow.com/questions/18210677/prevent-div-from-scrolling-despite-position-absolute"
+                                target="_blank">Stack position Fixed</a></i>
+                        <i class="fa fa-anchor">&nbsp &nbsp<a
+                                href="https://stackoverflow.com/questions/23563669/bootstrap-scrolling-just-a-div-and-keep-other-content-on-top"
+                                target="_blank">Stack position Fixed V2</a></i>
+                        <i class="fa fa-anchor">&nbsp &nbsp<a
+                                href="https://css-tricks.com/the-difference-between-id-and-class/" target="_blank">Css
+                            different between class and ID</a></i>
+                        <i class="fa fa-anchor">&nbsp &nbsp<a
+                                href="https://www.w3schools.com/bootstrap4/bootstrap_flex.asp" target="_blank">W3School
+                            bootstrap 4 flex</a></i>
+                        <i class="fa fa-anchor">&nbsp &nbsp<a
+                                href="https://v4-alpha.getbootstrap.com/utilities/position/" target="_blank">Bootstrap
+                            4 position</a></i>
+                        <i class="fa fa-anchor">&nbsp &nbsp<a
+                                href="https://medium.com/@vikrantrana1993/difference-between-container-and-container-fluid-in-bootstrap-3330832abf87"
+                                target="_blank">Bootstrap Containers</a></i>
+                        <i class="fa fa-anchor">&nbsp &nbsp<a
+                                href="https://www.w3schools.com/w3css/w3css_containers.asp" target="_blank">W3school
+                            Containers</a></i>
+                        <i class="fa fa-anchor">&nbsp &nbsp<a
+                                href="https://stackoverflow.com/questions/7897516/how-to-position-div-table-lower-from-the-top"
+                                target="_blank">Stack position div lower</a></i>
+                        <i class="fa fa-anchor">&nbsp &nbsp<a
+                                href="https://www.w3schools.com/cssref/pr_pos_overflow.asp" target="_blank">W3School
+                            Css overflow</a></i>
+                        <i class="fa fa-anchor">&nbsp &nbsp<a
+                                href="https://stackoverflow.com/questions/35778372/bootstrap-fixed-header-and-footer-with-collapsible-sidebar"
+                                target="_blank">Stack Fixed header collapse sidebar</a></i>
+                        <i class="fa fa-anchor">&nbsp &nbsp<a
+                                href="https://medium.com/wdstack/bootstrap-is-still-better-than-css-grid-for-creating-layouts-522b7baf0411"
+                                target="_blank">Bootstrap Flex box</a></i>
+                        <i class="fa fa-anchor">&nbsp &nbsp <a
+                                href="https://www.sitepoint.com/bootstrap-grid-mastering-flexbox/" target="_blank">Bootstrap
+                            flex box v2</a></i>
+                        <i class="fa fa-anchor">&nbsp &nbsp<a href="https://www.youtube.com/watch?v=k32voqQhODc"
+                                                              target="_blank">Youtube Flexbox</a></i>
+                        <i class="fa fa-anchor">&nbsp &nbsp<a
+                                href="https://stackoverflow.com/questions/25427407/bootstrap-3-and-4-container-fluid-with-grid-adding-unwanted-padding"
+                                target="_blank">Stack unwanted padding with grid in bootstrap</a></i>
+                        <i class="fa fa-anchor">&nbsp &nbsp<a
+                                href="https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors"
+                                target="_blank">Stack overlap anchor with fixed header</a></i>
+                        <i class="fa fa-anchor">&nbsp &nbsp<a
+                                href="https://www.w3schools.com/cssref/pr_font_font-size.asp">W3School font size</a></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- empty space  -->
+        <div class="row">
+            <div class="col-md-12" id ="empty" >
+            </div>
+        </div>
+        <!-- footer  -->
+        <div class="row">
+            <div class="col-md-12" id ="footer" >
+                <div class="row" >
+                <div class="col-md-4 copy">
+                    <i class="fas fa-copyright">&nbsp Gianni Acke</i>
+                </div>
+                <div class="col-md-4 mail">
+                    <a href ="mailto:gianni.acke@studen.vives.be"><i class="fas fa-at"></i>&nbsp Mail me even</a>
+                </div>
+                <div class="col-md-4 tel">
+                    <i class="fas fa-copyright">&nbsp<script> document.write(new Date().toLocaleDateString()); </script> </i>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+
+<script crossorigin="anonymous"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+<script src="js/kalender.js"></script>
+
+</body>
+</html>

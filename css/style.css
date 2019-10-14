@@ -1,0 +1,78 @@
+body{
+    background-color: black !important;
+}
+.header{
+    height: 150px;
+    width: 100%;
+    background-image: url("../img/headertop.jpg");
+    background-size: 100% 100% ;
+    background-repeat: no-repeat;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/headerbot.jpg");
+    background-size: 100% 350px  ;
+    background-repeat: no-repeat;
+    color: #ccc;
+    line-height: 1.45;
+    overflow-y: -moz-hidden-unscrollable;
+    margin-left: 320px;
+
+
+}
+.my-container3{
+    margin-top: 150px ;
+    width: 100%;
+}
+/*Lang moeten zoeken maar het verschil met de anchor en de fixed header wordt hier mee weg gewerkt
+De anchor staat nu op de juiste plaats op de pagina bij het aanklikken
+ */
+:target::before {
+    content: "";
+    display: block;
+    height: 205px; /* fixed header height*/
+    margin: -205px 0 0; /* negative fixed header height */
+}
+
+/*achtergrond van de card*/
+.card-body{
+    background-color: #5a6268;
+
+}
+.card-body{
+    font-family:"Comic Sans MS";
+}
+
+.menu{
+    font-size: large;
+    float: right;
+}
+hr{
+    color: white;
+}
+#empty{
+    height: 150px;
+    width: 100%;
+}
+#footer{
+    height: 100px;
+    width: 100%;
+}
+
+#footer-copy{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+@media (max-width:768px) {
+    #main {
+        height: 100%;
+        width: 100%;
+        float: right;
+        /*background-color: black;*/
+        margin-left: 10px;
+    }
+}
